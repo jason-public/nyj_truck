@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남양주시청 자동차관리과 - 화물자동차 운송사업 안내</title>
+    <meta name="description" content="남양주시청 자동차관리과의 화물자동차 운송사업 인허가, 민원처리, 유가보조금 관련 업무 안내">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>남양주시청 자동차관리과</h1>
+                    <p class="header__slogan">신뢰받는 화물운송 행정서비스</p>
+                </div>
+                <div class="header__contact">
+                    <p>📞 031-590-2491~5</p>
+                    <p>⏰ 평일 09:00~18:00</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Visual Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h2>화물자동차 운송사업<br>원스톱 서비스</h2>
+                    <p>인허가부터 유가보조금까지<br>전문적이고 신속한 행정서비스를 제공합니다</p>
+                    <div class="hero__buttons">
+                        <button class="btn btn--primary btn--lg" onclick="scrollToSection('services')">
+                            주요 서비스 보기
+                        </button>
+                        <button class="btn btn--outline btn--lg" onclick="scrollToSection('location')">
+                            위치 확인하기
+                        </button>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757986449/pplx_project_search_images/5cae67e212e84720b69a592f0b45032f5124cf64.png" alt="화물자동차 운송 이미지" class="hero__truck">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">주요 서비스</h2>
+            
+            <div class="services__grid">
+                <!-- Licensing Service -->
+                <div class="service-card">
+                    <div class="service-card__icon">🚛</div>
+                    <h3>화물자동차운송사업 인허가</h3>
+                    <p>화물자동차 운송사업 허가 신청부터 승인까지 원스톱 서비스를 제공합니다.</p>
+                    
+                    <div class="service-details">
+                        <h4>처리 절차</h4>
+                        <div class="process-steps">
+                            <span>허가신청</span> → <span>서류검토</span> → <span>예비허가</span> → <span>시설확인</span> → <span>허가증교부</span>
+                        </div>
+                        
+                        <div class="service-info">
+                            <div class="info-item">
+                                <strong>처리기간:</strong> 20일 이내
+                            </div>
+                            <div class="info-item">
+                                <strong>수수료:</strong> 기본 14,000원 (차량 1대당 2,000원 추가)
+                            </div>
+                        </div>
+
+                        <h4>필요 서류</h4>
+                        <ul class="document-list">
+                            <li>허가신청서</li>
+                            <li>차고지 설치확인서</li>
+                            <li>화물자동차 매매계약서</li>
+                            <li>법인등기부등본(법인)</li>
+                            <li>적재물배상보험 가입증명서</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn--primary btn--full-width" onclick="openExternalLink('licensing')">
+                        인허가 신청하기
+                    </button>
+                </div>
+
+                <!-- Civil Affairs Service -->
+                <div class="service-card">
+                    <div class="service-card__icon">📋</div>
+                    <h3>민원 처리절차</h3>
+                    <p>화물자동차 관련 각종 민원을 신속하고 정확하게 처리해드립니다.</p>
+                    
+                    <div class="service-details">
+                        <h4>접수 방법</h4>
+                        <div class="method-list">
+                            <div class="method-item">
+                                <span class="method-icon">🏢</span>
+                                <span>방문 접수</span>
+                            </div>
+                            <div class="method-item">
+                                <span class="method-icon">💻</span>
+                                <span>온라인 신청</span>
+                            </div>
+                            <div class="method-item">
+                                <span class="method-icon">📮</span>
+                                <span>우편 접수</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-info">
+                            <div class="info-item">
+                                <strong>담당부서:</strong> 차량등록팀, 차량사법경찰팀
+                            </div>
+                            <div class="info-item">
+                                <strong>콜센터:</strong> 031-590-2114
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn--primary btn--full-width" onclick="openExternalLink('civilAffairs')">
+                        민원 접수하기
+                    </button>
+                </div>
+
+                <!-- Fuel Subsidy Service -->
+                <div class="service-card">
+                    <div class="service-card__icon">⛽</div>
+                    <h3>유가보조금 지원 정책</h3>
+                    <p>영업용 화물자동차 운송사업자를 위한 유가보조금 지원 서비스입니다.</p>
+                    
+                    <div class="service-details">
+                        <h4>지원 대상</h4>
+                        <ul class="eligibility-list">
+                            <li>사업용 화물자동차 운송사업자</li>
+                            <li>LPG, 경유 사용 차량</li>
+                            <li>유류구매카드 발급 대상자</li>
+                        </ul>
+                        
+                        <h4>신청 방법</h4>
+                        <p>서면신청 또는 유류구매카드 사용</p>
+                        
+                        <h4>필요 서류</h4>
+                        <ul class="document-list">
+                            <li>유가보조금 지급 신청서</li>
+                            <li>유류구매 내역 명세서</li>
+                            <li>영수증 원본</li>
+                            <li>자동차등록증 사본</li>
+                            <li>사업자등록증 사본</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn--primary btn--full-width" onclick="openExternalLink('fuelSubsidy')">
+                        유가보조금 안내
+                    </button>
+                </div>
+
+                <!-- Fraud Prevention Service -->
+                <div class="service-card">
+                    <div class="service-card__icon">⚠️</div>
+                    <h3>유가보조금 부정수급 예방</h3>
+                    <p>유가보조금 부정수급 사례와 예방 방법을 안내합니다.</p>
+                    
+                    <div class="service-details">
+                        <h4>처벌 내용</h4>
+                        <ul class="penalty-list">
+                            <li>1년 이하 징역 또는 1천만원 이하 벌금</li>
+                            <li>1년 범위 내 유가보조금 지급정지</li>
+                            <li>부정지급액 환수</li>
+                        </ul>
+                        
+                        <h4>부정수급 사례</h4>
+                        <ul class="case-list">
+                            <li>허위 영수증 사용</li>
+                            <li>지급대상 외 차량 주유</li>
+                            <li>카드깡 등 불법행위</li>
+                        </ul>
+                        
+                        <h4>예방 수칙</h4>
+                        <ul class="prevention-list">
+                            <li>정당한 용도로만 사용</li>
+                            <li>영수증 보관 의무</li>
+                            <li>부정수급 신고 협조</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn--primary btn--full-width" onclick="openExternalLink('fraudPrevention')">
+                        신고하기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">위치 안내</h2>
+            
+            <div class="location__content">
+                <div class="location__info">
+                    <div class="location__address">
+                        <h3>주소 정보</h3>
+                        <p><strong>경기도 남양주시 다산지금로16번길 95</strong></p>
+                        <p>자동차관리과</p>
+                        <p>우편번호: 12284</p>
+                    </div>
+                    
+                    <div class="location__transport">
+                        <h3>교통 안내</h3>
+                        
+                        <div class="transport-item">
+                            <h4>🚇 지하철</h4>
+                            <p>경의중앙선 도농역 2번출구 도보 19분</p>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <h4>🚌 버스</h4>
+                            <p><strong>정류장:</strong> 남양주제2청사·남양주경찰서</p>
+                            <div class="bus-numbers">
+                                <span class="bus-number">1-4</span>
+                                <span class="bus-number">9</span>
+                                <span class="bus-number">9-1</span>
+                                <span class="bus-number">10-5</span>
+                                <span class="bus-number">15</span>
+                                <span class="bus-number">23</span>
+                                <span class="bus-number">30</span>
+                                <span class="bus-number">65</span>
+                                <span class="bus-number">91</span>
+                                <span class="bus-number">93</span>
+                                <span class="bus-number">97</span>
+                                <span class="bus-number">165</span>
+                                <span class="bus-number">1115-2</span>
+                                <span class="bus-number">1000</span>
+                                <span class="bus-number">1003</span>
+                                <span class="bus-number">1006</span>
+                            </div>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <h4>🅿️ 주차 안내</h4>
+                            <p>민원인 전용 주차장 이용 가능</p>
+                            <p>장애인 주차구역, 전기차 충전소 운영</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location__map">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757986452/pplx_project_search_images/43834f4217a364528c97052a7fedd4684b47ae26.png" alt="남양주시청 위치 안내도" class="facility-map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="downloads" class="downloads">
+        <div class="container">
+            <h2 class="section-title">업무 양식 다운로드</h2>
+            
+            <div class="downloads__content">
+                <div class="downloads__info">
+                    <p>화물자동차 운송사업 관련 각종 민원서류 양식을 다운로드받을 수 있습니다.</p>
+                </div>
+                
+                <div class="downloads__forms">
+                    <div class="form-item">
+                        <div class="form-icon">📄</div>
+                        <div class="form-info">
+                            <h4>화물자동차운송사업 허가신청서</h4>
+                            <p>운송사업 허가 신청 시 필요한 기본 서식</p>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="downloadForm('permit')">다운로드</button>
+                    </div>
+                    
+                    <div class="form-item">
+                        <div class="form-icon">📄</div>
+                        <div class="form-info">
+                            <h4>차고지 설치확인서</h4>
+                            <p>차고지 설치 및 확인을 위한 서식</p>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="downloadForm('garage')">다운로드</button>
+                    </div>
+                    
+                    <div class="form-item">
+                        <div class="form-icon">📄</div>
+                        <div class="form-info">
+                            <h4>유가보조금 지급신청서</h4>
+                            <p>유가보조금 지원 신청을 위한 서식</p>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="downloadForm('fuel')">다운로드</button>
+                    </div>
+                    
+                    <div class="form-item">
+                        <div class="form-icon">📄</div>
+                        <div class="form-info">
+                            <h4>유류구매 내역 명세서</h4>
+                            <p>유류구매 내역 정리를 위한 서식</p>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="downloadForm('purchase')">다운로드</button>
+                    </div>
+                </div>
+                
+                <div class="downloads__board">
+                    <button class="btn btn--primary btn--lg" onclick="openBoardLink()">
+                        📋 전체 게시판 보기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">연락처 정보</h2>
+            
+            <div class="contact__grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h4>전화문의</h4>
+                    <p>031-590-2491~5 (차량등록팀)</p>
+                    <p>031-590-2114 (콜센터)</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📠</div>
+                    <h4>팩스</h4>
+                    <p>031-590-2499</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <h4>운영시간</h4>
+                    <p>평일 09:00~18:00</p>
+                    <p>(토, 일, 공휴일 휴무)</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🏢</div>
+                    <h4>담당부서</h4>
+                    <p>차량등록팀</p>
+                    <p>차량사법경찰팀</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3>남양주시청 자동차관리과</h3>
+                    <p>경기도 남양주시 다산지금로16번길 95</p>
+                    <p>전화: 031-590-2491~5 | 팩스: 031-590-2499</p>
+                </div>
+                <div class="footer__links">
+                    <button class="btn btn--outline btn--sm" onclick="scrollToTop()">맨 위로</button>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2025 남양주시청 자동차관리과. 모든 권리 보유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CTA Floating Button -->
+    <div class="floating-cta">
+        <button class="floating-btn" onclick="toggleCTAMenu()" aria-label="빠른 메뉴">
+            <span class="floating-btn__icon">+</span>
+        </button>
+        <div class="cta-menu" id="ctaMenu">
+            <button class="cta-menu__item" onclick="scrollToSection('services')">
+                <span class="cta-icon">🚛</span>
+                서비스 안내
+            </button>
+            <button class="cta-menu__item" onclick="scrollToSection('location')">
+                <span class="cta-icon">📍</span>
+                위치 확인
+            </button>
+            <button class="cta-menu__item" onclick="openBoardLink()">
+                <span class="cta-icon">📋</span>
+                양식 다운로드
+            </button>
+            <button class="cta-menu__item" onclick="openExternalLink('contact')">
+                <span class="cta-icon">📞</span>
+                전화 상담
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
